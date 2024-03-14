@@ -1,0 +1,92 @@
+:root {
+  --text-color: #c8d0d4;
+  --field-color: #d9d9d9;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-image: url("/images/background.jpg");
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.parameters {
+  color: var(--text-color);
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  width: 1880px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  opacity: 0;
+  width: 30;
+  height: 10;
+}
+
+.button-borders {
+  border-width: 3px;
+  border-color: var(--field-color);
+}
+
+.label {
+  padding: 10px 20px;
+  border: 2px solid var(--field-color);
+  cursor: pointer;
+}
+
+.label:hover {
+  border-color: #ccc;
+}
+
+.button:checked + label {
+  background-color: var(--field-color);
+  border-color: var(--field-color);
+}
+
+/* .buttons-select-item ::before {
+  color: var(--field-color);
+  display: inline-block;
+  min-width: 105px;
+  min-height: 24px;
+  cursor: pointer;
+  padding: 16px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  border-color: var(--logo-n-button-color);
+  background-color: transparent;
+
+  transition: background-color 250ms var(--cubic),
+    border-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+}
+
+.buttons-select-item ::after {
+  color: #000000;
+  display: inline-block;
+  min-width: 105px;
+  min-height: 24px;
+  cursor: pointer;
+  padding: 16px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  border-color: var(--logo-n-button-color);
+  background-color: #000000;
+
+  transition: background-color 250ms var(--cubic),
+    border-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+} */
