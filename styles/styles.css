@@ -33,15 +33,24 @@ body {
 .input-field-text {
   width: 268px;
   height: 33px;
+  padding-left: 10px;
   box-sizing: border-box;
   border-radius: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .option-select {
   width: 268px;
   height: 33px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-sizing: border-box;
   border-radius: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .undo-parametr {
