@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>😉👍</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,175 +21,301 @@
   </head>
   <body class="container">
     <header></header>
-    <main>
+    <main class="main">
       <div class="fields-list">
         <form action="#">
           <ul class="parameters">
             <li class="undo-parametr">
               <label for="brand" class="label-for-field">Марка авто</label>
-              <div>
-                <input
-                  class="input-field-text"
-                  type="text"
-                  name="Brand"
-                  id="brand"
-                  required
-                />
-              </div>
+              <input
+                class="input-field-text"
+                type="text"
+                name="Brand"
+                id="brand"
+                required
+              />
             </li>
             <li class="undo-parametr">
               <label for="model">Модель авто</label>
-              <div>
-                <input
-                  class="input-field-text"
-                  type="text"
-                  name="Model"
-                  id="model"
-                  required
-                />
-              </div>
+              <input
+                class="input-field-text"
+                type="text"
+                name="Model"
+                id="model"
+                required
+              />
             </li>
             <li class="undo-parametr">
               <label for="year">Рік випуску</label>
-              <div>
-                <input
-                  class="input-field-text"
-                  type="text"
-                  name="Year"
-                  id="year"
-                  required
-                />
-              </div>
+              <input
+                class="input-field-text"
+                type="text"
+                name="Year"
+                id="year"
+                required
+              />
             </li>
             <li class="undo-parametr">
               <label for="mileage">Пробіг</label>
-              <div>
-                <input
-                  class="input-field-text"
-                  type="text"
-                  name="Mileage"
-                  id="mileage"
-                  required
-                />
-              </div>
+              <input
+                class="input-field-text"
+                type="text"
+                name="Mileage"
+                id="mileage"
+                required
+              />
             </li>
             <li class="undo-parametr">
               <label for="capacity">Об’єм двигуна</label>
-              <div>
-                <input
-                  class="input-field-text"
-                  type="text"
-                  name="Capacity"
-                  id="capacity"
-                  required
-                />
-              </div>
+              <input
+                class="input-field-text"
+                type="text"
+                name="Capacity"
+                id="capacity"
+                required
+              />
             </li>
             <li class="options-list undo-parametr">
               <label for="cab">Тип кузова</label>
-              <div>
-                <select name="cabs" id="cab" class="option-select">
-                  <option value="empty">--Не вибрано--</option>
-                  <option value="Sedan">Седан</option>
-                  <option value="Compartment">Купе</option>
-                  <option value="MPV">Універсал</option>
-                  <option value="SUV">Позашляховик</option>
-                  <option value="Minivan">Мінівен</option>
-                  <option value="Liftback">Ліфтбек</option>
-                  <option value="Microvan">Мікровен</option>
-                  <option value="Pickup">Пікап</option>
-                  <option value="Roadster">Родстер</option>
-                  <option value="Hatchback">Хетчбек</option>
-                  <option value="Cabriolet">Кабріолет</option>
-                  <option value="Limousine">Лімузин</option>
-                  <option value="Fastback">Фастбек</option>
-                </select>
-              </div>
+
+              <select name="cabs" id="cab" class="option-select">
+                <option value="" selected disabled hidden></option>
+                <option value="Sedan">Седан</option>
+                <option value="Compartment">Купе</option>
+                <option value="MPV">Універсал</option>
+                <option value="SUV">Позашляховик</option>
+                <option value="Minivan">Мінівен</option>
+                <option value="Liftback">Ліфтбек</option>
+                <option value="Microvan">Мікровен</option>
+                <option value="Pickup">Пікап</option>
+                <option value="Roadster">Родстер</option>
+                <option value="Hatchback">Хетчбек</option>
+                <option value="Cabriolet">Кабріолет</option>
+                <option value="Limousine">Лімузин</option>
+                <option value="Fastback">Фастбек</option>
+              </select>
             </li>
             <li class="options-list undo-parametr">
               <label for="fuel">Вид палива</label>
-              <div>
-                <select name="fueltypes" id="fuel" class="option-select">
-                  <option value="empty">--Не вибрано--</option>
-                  <option value="Gas">Газ</option>
-                  <option value="Gasoline">Бензин</option>
-                  <option value="Gas">Газ/Бензин</option>
-                  <option value="Diesel">Дизель</option>
-                  <option value="Electro">Електро</option>
-                  <option value="Hybrid">Гібрид</option>
-                </select>
-              </div>
+              <select name="fueltypes" id="fuel" class="option-select">
+                <option value="" selected disabled hidden></option>
+                <option value="Gas">Газ</option>
+                <option value="Gasoline">Бензин</option>
+                <option value="Gas">Газ/Бензин</option>
+                <option value="Diesel">Дизель</option>
+                <option value="Electro">Електро</option>
+                <option value="Hybrid">Гібрид</option>
+              </select>
             </li>
             <li class="options-list undo-parametr">
               <label for="gearbox">КПП</label>
-              <div>
-                <select name="gearboxes" id="gearbox" class="option-select">
-                  <option value="empty">--Не вибрано--</option>
-                  <option value="Auto">Автомат</option>
-                  <option value="Mech">Механіка</option>
-                </select>
-              </div>
+              <select name="gearboxes" id="gearbox" class="option-select">
+                <option value="" selected disabled hidden></option>
+                <option value="Auto">Автомат</option>
+                <option value="Mech">Механіка</option>
+              </select>
             </li>
             <li class="undo-parametr">
               <label for="owner">К-ть попередніх власників</label>
-              <div>
-                <input
-                  class="input-field-text"
-                  type="text"
-                  name="Owner"
-                  id="owner"
-                  required
-                />
-              </div>
+              <input
+                class="input-field-text"
+                type="text"
+                name="Owner"
+                id="owner"
+                required
+              />
             </li>
             <li class="undo-parametr">
               <label for="accident">К-ть зареєстрованих ДТП</label>
-              <div>
-                <input
-                  class="input-field-text"
-                  type="text"
-                  name="Accident"
-                  id="accident"
-                  required
-                />
+              <input
+                class="input-field-text"
+                type="text"
+                name="Accident"
+                id="accident"
+                required
+              />
+            </li>
+            <li class="undo-parametr">
+              <label>Стан двигуна</label>
+              <div class="button-select-list">
+                <div class="button-borders">
+                  <label for="button1" class="button-label">
+                    <input
+                      type="radio"
+                      id="button1"
+                      name="buttonGroupEngine"
+                      class="button1"
+                      value="button1"
+                    />
+                    <span>русік не знадобиться</span>
+                  </label>
+                </div>
+                <div class="button-borders">
+                  <label for="button2" class="button-label">
+                    <input
+                      type="radio"
+                      id="button2"
+                      name="buttonGroupEngine"
+                      class="button1"
+                      value="button2"
+                    />
+                    <span>русік відремонтує</span>
+                  </label>
+                </div>
+                <div class="button-borders">
+                  <label for="button3" class="button-label">
+                    <input
+                      type="radio"
+                      id="button3"
+                      name="buttonGroupEngine"
+                      class="button1"
+                      value="button3"
+                    />
+                    <span>русік не відремонтує</span>
+                  </label>
+                </div>
               </div>
             </li>
             <li class="undo-parametr">
-              <div class="buttons">
+              <label>Стан кузова</label>
+              <div class="button-select-list">
                 <div class="button-borders">
-                  <input
-                    type="radio"
-                    id="button1"
-                    name="buttonGroup"
-                    class="button"
-                    value="button1"
-                  />
-                  <label for="button1">Кнопка 1</label>
+                  <label for="button4" class="button-label">
+                    <input
+                      type="radio"
+                      id="button4"
+                      name="buttonGroupCab"
+                      class="button"
+                      value="button4"
+                    />
+                    <span>русік не знадобиться</span>
+                  </label>
                 </div>
-                <input
-                  type="radio"
-                  id="button2"
-                  name="buttonGroup"
-                  class="button"
-                  value="button2"
-                />
-                <label for="button2">Кнопка 2</label>
-
-                <input
-                  type="radio"
-                  id="button3"
-                  name="buttonGroup"
-                  class="button"
-                  value="button3"
-                />
-                <label for="button3">Кнопка 3</label>
+                <div class="button-borders">
+                  <label for="button5" class="button-label">
+                    <input
+                      type="radio"
+                      id="button5"
+                      name="buttonGroupCab"
+                      class="button"
+                      value="button5"
+                    />
+                    <span>русік відремонтує</span>
+                  </label>
+                </div>
+                <div class="button-borders">
+                  <label for="button6" class="button-label">
+                    <input
+                      type="radio"
+                      id="button6"
+                      name="buttonGroupCab"
+                      class="button"
+                      value="button6"
+                    />
+                    <span>русік не відремонтує</span>
+                  </label>
+                </div>
               </div>
             </li>
-            <li>
-              <p>adad</p>
+            <li class="undo-parametr">
+              <label>Стан салону</label>
+              <div class="button-select-list">
+                <div class="button-borders">
+                  <label for="button7" class="button-label">
+                    <input
+                      type="radio"
+                      id="button7"
+                      name="buttonGroupInterior"
+                      class="button"
+                      value="button7"
+                    />
+                    <span>русік не знадобиться</span>
+                  </label>
+                </div>
+                <div class="button-borders">
+                  <label for="button8" class="button-label">
+                    <input
+                      type="radio"
+                      id="button8"
+                      name="buttonGroupInterior"
+                      class="button"
+                      value="button8"
+                    />
+                    <span>русік відремонтує</span>
+                  </label>
+                </div>
+                <div class="button-borders">
+                  <label for="button9" class="button-label">
+                    <input
+                      type="radio"
+                      id="button9"
+                      name="buttonGroupInterior"
+                      class="button"
+                      value="button9"
+                    />
+                    <span>русік не відремонтує</span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="undo-parametr">
+              <label>Стан підвіски</label>
+              <div class="button-select-list">
+                <div class="button-borders">
+                  <label for="button10" class="button-label">
+                    <input
+                      type="radio"
+                      id="button10"
+                      name="buttonGroupSuspension"
+                      class="button"
+                      value="button10"
+                    />
+                    <span>русік не знадобиться</span>
+                  </label>
+                </div>
+                <div class="button-borders">
+                  <label for="button11" class="button-label">
+                    <input
+                      type="radio"
+                      id="button11"
+                      name="buttonGroupSuspension"
+                      class="button"
+                      value="button11"
+                    />
+                    <span>русік відремонтує</span>
+                  </label>
+                </div>
+                <div class="button-borders">
+                  <label for="button12" class="button-label">
+                    <input
+                      type="radio"
+                      id="button12"
+                      name="buttonGroupSuspension"
+                      class="button"
+                      value="button12"
+                    />
+                    <span>русік не відремонтує</span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="undo-parametr">
+              <button class="price-calculation-btn">
+                Розрахувати вартість
+              </button>
             </li>
           </ul>
         </form>
+      </div>
+      <div class="nereal-img">
+        <img
+          src="./images/motivation.png"
+          alt="motivation"
+          class="motivation-img"
+        />
+        <p class="motivation-text">
+          "The trouble is you think you have time." Unknown
+        </p>
       </div>
     </main>
   </body>
