@@ -5,21 +5,13 @@
 }
 
 body {
-  background-image: url("/images/background.jpg");
+  background-image: url("./images/background.jpg");
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 19px;
   color: #c8d0d4;
   overflow: hidden;
-  /* height: 100%;
-  width: 100%; */
 }
-
-/* .fields-list {
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-} */
 
 .parameters {
   color: var(--text-color);
