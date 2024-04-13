@@ -10,6 +10,7 @@ body {
   font-weight: 500;
   font-size: 19px;
   color: #c8d0d4;
+  overflow: hidden;
   /* height: 100%;
   width: 100%; */
 }
@@ -194,4 +195,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 1px 1px 3px black;
+}
+
+.inc {
+  display: flex;
+  justify-content: center;
 }
