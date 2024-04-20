@@ -4,6 +4,13 @@ const selectedFuel = document.getElementById("fuel");
 const selectedGearbox = document.getElementById("gearbox");
 const radioButton = document.querySelector(".button-label span");
 
+const markaKolupalka = document.getElementById("brand");
+
+markaKolupalka.addEventListener("change", () => {
+  fetch();
+  console.log(markaKolupalka.value);
+});
+
 carCalculatiionForm.addEventListener("submit", handleShowPrice);
 
 radioButton.addEventListener("click", () => {
