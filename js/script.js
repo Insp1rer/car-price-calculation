@@ -6,9 +6,16 @@ const radioButton = document.querySelector(".button-label span");
 
 const markaKolupalka = document.getElementById("brand");
 
-markaKolupalka.addEventListener("change", () => {
-  fetch();
-  console.log(markaKolupalka.value);
+markaKolupalka.addEventListener("change", async () => {
+  try {
+    console.log(markaKolupalka.value);
+    const response = await fetch("http://localhost:3000/dai-meni-marka", {
+      mode: "no-cors",
+    });
+    console.log(response);
+  } catch (error) {
+    console.log("mask gaychik");
+  }
 });
 
 carCalculatiionForm.addEventListener("submit", handleShowPrice);
