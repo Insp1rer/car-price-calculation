@@ -193,3 +193,10 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.error-msg {
+  border-bottom: solid red;
+  #error {
+    color: red;
+  }
+}

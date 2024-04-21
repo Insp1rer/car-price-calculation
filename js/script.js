@@ -4,20 +4,38 @@ const selectedFuel = document.getElementById("fuel");
 const selectedGearbox = document.getElementById("gearbox");
 const radioButton = document.querySelector(".button-label span");
 
-const markaKolupalka = document.getElementById("brand");
+//module.exports = { json: }
 
-markaKolupalka.addEventListener("change", async () => {
+const carBrand = document.getElementById("brand");
+
+carBrand.addEventListener("change", async () => {
   try {
-    console.log(markaKolupalka.value);
-    const response = await fetch("http://localhost:3000/dai-meni-marka/", {
-      mode: "no-cors",
-      method: "get",
-      url: "http://localhost:3000",
-      credentials: "include",
-    });
-    console.log(response);
+    console.log(carBrand.value);
+    const response = await fetch(
+      `http://localhost:3000/dai-meni-brand/${carBrand.value}`,
+      {
+        method: "GET",
+      }
+    );
+    const data = await response.json();
+    console.log(data);
   } catch (error) {
-    console.log("mask gaychik");
+    input.onblur = function () {
+      if (!input.value.includes("@")) {
+        // не email
+        input.classList.add("invalid");
+        error.innerHTML = "Пожалуйста, введите правильный email.";
+      }
+    };
+
+    input.onfocus = function () {
+      if (this.classList.contains("invalid")) {
+        // удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
+        this.classList.remove("invalid");
+        error.innerHTML = "";
+      }
+    };
+    console.log("pizdec");
   }
 });
 
