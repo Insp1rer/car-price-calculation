@@ -9,8 +9,11 @@ const markaKolupalka = document.getElementById("brand");
 markaKolupalka.addEventListener("change", async () => {
   try {
     console.log(markaKolupalka.value);
-    const response = await fetch("http://localhost:3000/dai-meni-marka", {
+    const response = await fetch("http://localhost:3000/dai-meni-marka/", {
       mode: "no-cors",
+      method: "get",
+      url: "http://localhost:3000",
+      credentials: "include",
     });
     console.log(response);
   } catch (error) {
